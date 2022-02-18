@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 18, 2022 at 03:19 PM
+-- Generation Time: Feb 18, 2022 at 05:07 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -81,8 +81,8 @@ CREATE TABLE `tbl_job` (
   `job_detail` enum('ลาป่วย','ลากิจ','พักร้อน') NOT NULL,
   `job_remark` text NOT NULL,
   `job_by` varchar(200) NOT NULL,
-  `date_start` date NOT NULL DEFAULT current_timestamp(),
-  `date_end` date NOT NULL DEFAULT current_timestamp()
+  `date_start` date NOT NULL,
+  `date_end` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf32;
 
 --
